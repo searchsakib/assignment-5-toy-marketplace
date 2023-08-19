@@ -25,7 +25,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: '#da373d',
+              banner: '#F9F6E2',
+              main: '#E527B2',
             },
           },
         },
@@ -41,16 +42,37 @@
   <body class="my-font">
     <header>
       <!-- banner section  -->
-      <section>
-        <div>
+      <section class="bg-banner">
+        <div
+          class="max-w-screen-xl mx-auto px-1 md:px-2 lg:px-3 flex flex-col-reverse items-center justify-center md:flex md:flex-row md:items-center md:justify-center md:gap-6 lg:flex lg:flex-row lg:items-center lg:justify-around lg:gap-10"
+        >
           <!-- banner text  -->
-          <div>
-            <h6>---SALE FEVER---</h6>
-            <h1>Purchase TK 200 or above & get <span>20% off</span></h1>
-            <p>Use Promo Code <button>SELL200</button></p>
+          <div
+            class="flex flex-col items-center justify-center w-1/2 text-center py-8 md:py-14 lg:py-20"
+          >
+            <h6 class="text-xl md:text-2xl lg:text-3xl font-medium">
+              ---SALE FEVER---
+            </h6>
+            <h1
+              class="text-2xl md:text-4xl lg:text-6xl font-bold mt-12 mb-11 md:mb-16 lg:mb-16"
+            >
+              Purchase TK 200 or above & get
+              <span class="text-main">20% off</span>
+            </h1>
+            <div class="md:flex items-center justify-center pb-8">
+              <p class="text-[#111] text-2xl font-medium mb-5 md:mb-0">
+                Use Promo Code
+              </p>
+              <span
+                class="border rounded-lg bg-main text-white text-2xl font-semibold text-center px-6 py-3 md:ml-3 lg:ml-4"
+              >
+                SELL200
+              </span>
+            </div>
           </div>
-          <div>
-            <img src="./images/summer.png" alt="" />
+          <!-- banner image  -->
+          <div class="w-1/2 py-8 md:py-14 lg:py-20">
+            <img class="" src="./images/summer.png" alt="" />
           </div>
         </div>
       </section>
