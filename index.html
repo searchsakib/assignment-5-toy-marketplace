@@ -98,12 +98,11 @@
             >
               <!-- card 1  -->
               <div
-                class="card w-[290px] lg:w-[342px] bg-base-100 shadow-xl mx-auto"
+                onclick="combinedFunc(this)"
+                class="card w-[290px] lg:w-[342px] bg-base-100 shadow-xl mx-auto cursor-pointer"
               >
                 <figure
-                  id="card-one"
-                  onclick="combinedFunc(this)"
-                  class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg cursor-pointer"
+                  class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg"
                 >
                   <img
                     src="./images/prod1.png"
@@ -147,6 +146,7 @@
               </div>
               <!-- card 2  -->
               <div
+                onclick="combinedFunc(this)"
                 class="card w-[290px] lg:w-[342px] bg-base-100 shadow-xl mx-auto"
               >
                 <figure
@@ -194,6 +194,7 @@
               </div>
               <!-- card 3  -->
               <div
+                onclick="combinedFunc(this)"
                 class="card w-[290px] lg:w-[342px] bg-base-100 shadow-xl mx-auto"
               >
                 <figure
@@ -256,6 +257,7 @@
             >
               <!-- card 4  -->
               <div
+                onclick="combinedFunc(this)"
                 class="card w-[290px] lg:w-[342px] bg-base-100 shadow-xl mx-auto"
               >
                 <figure
@@ -303,6 +305,7 @@
               </div>
               <!-- card 5  -->
               <div
+                onclick="combinedFunc(this)"
                 class="card w-[290px] lg:w-[342px] bg-base-100 shadow-xl mx-auto"
               >
                 <figure
@@ -350,6 +353,7 @@
               </div>
               <!-- card 6  -->
               <div
+                onclick="combinedFunc(this)"
                 class="card w-[290px] lg:w-[342px] bg-base-100 shadow-xl mx-auto"
               >
                 <figure
@@ -412,11 +416,13 @@
               <div class="form-control">
                 <label class="input-group">
                   <input
+                    id="coupon-input"
                     type="text"
                     placeholder="Coupon code"
                     class="input input-bordered border-r-0 focus:outline-none w-[155px] md:w-[155px] lg:w-[280px]"
                   />
                   <button
+                    id="coupon-apply"
                     class="btn bg-main text-white px-4 py-5 font-semibold text-center content-around border-main hover:bg-secondary text-base btn-disabled"
                   >
                     Apply
@@ -454,6 +460,7 @@
             </div>
             <div>
               <button
+                id="make-purchase"
                 class="btn bg-main lg:w-[294px] text-white px-4 py-4 text-center content-around border-main hover:bg-secondary font-semibold text-base mx-auto block mt-[-27px] btn-disabled"
                 onclick="my_modal_4.showModal()"
               >
