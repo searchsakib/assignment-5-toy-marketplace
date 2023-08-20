@@ -98,12 +98,12 @@
             >
               <!-- card 1  -->
               <div
-                id="card-one"
-                onclick="addToList(this)"
                 class="card w-[290px] lg:w-[342px] bg-base-100 shadow-xl mx-auto"
               >
                 <figure
-                  class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg"
+                  id="card-one"
+                  onclick="addToList(this)"
+                  class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg cursor-pointer"
                 >
                   <img
                     src="./images/prod1.png"
@@ -429,16 +429,8 @@
               class="p-6 w-[290px] lg:w-[342px] bg-white border rounded-lg mx-auto"
             >
               <!-- procuct list -->
-              <div class="border-b">
-                <p class="text-2xl font-medium py-1">
-                  <span>1.</span>Home Cooker
-                </p>
-                <p class="text-2xl font-medium py-1">
-                  <span>2.</span>Flexible Sofa
-                </p>
-                <p class="text-2xl font-medium pt-1 pb-5">
-                  <span>3.</span>Home Cooker
-                </p>
+              <div id="list-title-container" class="border-b pb-5">
+                <!-- <p class="text-2xl font-medium py-1"></p> -->
               </div>
               <!-- price tags  -->
               <div class="border-b">
