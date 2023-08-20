@@ -68,7 +68,8 @@
                 Use Promo Code
               </p>
               <button
-                class="border rounded-lg bg-main text-white text-2xl font-semibold text-center px-6 py-3 md:ml-3 lg:ml-4 hover:bg-secondary"
+                id="coupon-btn"
+                class="btn content-around border rounded-lg bg-main text-white text-2xl font-semibold text-center px-6 py-3 md:ml-3 lg:ml-4 hover:bg-secondary"
               >
                 SELL200
               </button>
@@ -97,6 +98,8 @@
             >
               <!-- card 1  -->
               <div
+                id="card-one"
+                onclick="addToList(this)"
                 class="card w-[290px] lg:w-[342px] bg-base-100 shadow-xl mx-auto"
               >
                 <figure
