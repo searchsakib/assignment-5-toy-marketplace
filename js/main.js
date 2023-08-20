@@ -19,7 +19,6 @@ function addToList(target) {
   // creating a p tag and inserting info
   const p = document.createElement('p');
   p.className = 'text-2xl font-medium py-1';
-  // console.log(count);
   p.innerHTML = `${count + 1}. ${cardTitle}`;
   listTitleContainer.appendChild(p);
 }
@@ -52,6 +51,7 @@ function priceCalculation(target) {
         let discountValue = parseFloat(discount.innerText);
         afterDiscount.innerText = (grandTotal - discountValue).toFixed(2);
         console.log(discountValue);
+
         // couponApply.classList.add('btn-disabled');
         // couponInput.placeholder = 'COUPON USED';
         // couponInput.value = '';
@@ -59,3 +59,28 @@ function priceCalculation(target) {
     });
   }
 }
+
+// Reseting Everything
+document.getElementById('home-reset').addEventListener('click', function () {
+  // removed apply btn & input
+  const couponApply = document.getElementById('coupon-apply');
+  const couponInput = document.getElementById('coupon-input');
+  couponApply.classList.add('btn-disabled');
+  couponInput.value = '';
+
+  // removed titles list
+  const listTitleContainer = document.getElementById('list-title-container');
+  listTitleContainer.innerHTML = '';
+
+  // removed all prices
+  const totalPrice = document.getElementById('total-price');
+  totalPrice.innerText = 0;
+  const discount = document.getElementById('discount');
+  discount.innerText = 0;
+  const afterDiscount = document.getElementById('after-discount');
+  afterDiscount.innerText = 0;
+
+  // disable make purchase button
+  const makePurchase = document.getElementById('make-purchase');
+  makePurchase.classList.add('btn-disabled');
+});
