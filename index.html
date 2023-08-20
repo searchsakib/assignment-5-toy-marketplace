@@ -28,6 +28,7 @@
               banner: '#F9F6E2',
               main: '#E527B2',
               secondary: '#984A83',
+              background: '#F8F8F8',
             },
           },
         },
@@ -78,202 +79,243 @@
         </div>
       </section>
     </header>
-    <main
-      class="max-w-screen-2xl flex flex-col md:flex-row lg:flex-row mx-auto px-1 md:px-2 lg:px-3"
-    >
-      <div class="">
-        <!-- kitchenware section starts -->
+    <main class="pt-[120px] bg-background">
+      <div
+        class="max-w-screen-2xl flex flex-col justify-center md:flex-row mx-auto lg:flex-row px-1 md:px-2 lg:px-3"
+      >
+        <div>
+          <!-- kitchenware section starts -->
+          <section>
+            <h3 class="text-4xl font-semibold pb-8">Kitchenware</h3>
+            <!-- kitchenware cards -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-5"
+            >
+              <!-- card 1  -->
+              <div class="card w-[342px] bg-base-100 shadow-xl">
+                <figure
+                  class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg"
+                >
+                  <img
+                    src="./images/prod1.png"
+                    alt="K. Accessories"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <!-- ratings  -->
+                <div class="rating mx-auto pt-6">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <div class="card-body items-center text-center py-2 gap-0">
+                  <h2 class="card-title">K. Accessories</h2>
+                  <p class="text-xl pb-1 text-[#11111180]">39.00 TK</p>
+                </div>
+              </div>
+              <!-- card 2  -->
+              <div class="card w-[342px] bg-base-100 shadow-xl">
+                <figure
+                  class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg"
+                >
+                  <img
+                    src="./images/prod2.png"
+                    alt="Chopping Board"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <!-- ratings  -->
+                <div class="rating mx-auto pt-6">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <div class="card-body items-center text-center py-2 gap-0">
+                  <h2 class="card-title">Chopping Board</h2>
+                  <p class="text-xl pb-1 text-[#11111180]">25.00 TK</p>
+                </div>
+              </div>
+              <!-- card 3  -->
+              <div class="card w-[342px] bg-base-100 shadow-xl">
+                <figure
+                  class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg"
+                >
+                  <img
+                    src="./images/prod3.png"
+                    alt="Home Cooker"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <!-- ratings  -->
+                <div class="rating mx-auto pt-6">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <div class="card-body items-center text-center py-2 gap-0">
+                  <h2 class="card-title">Home Cooker</h2>
+                  <p class="text-xl pb-1 text-[#11111180]">49.00 TK</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- kitchenware section ends -->
+          <!-- furniture section starts -->
+          <section></section>
+          <!-- furniture section ends -->
+        </div>
+        <!-- coupon & price section starts-->
         <section>
-          <h3>Kitchenware</h3>
-          <!-- kitchenware cards -->
-          <div
-            class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-5"
-          >
-            <!-- card 1  -->
-            <div class="card w-[342px] bg-base-100 shadow-2xl">
-              <figure
-                class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg"
-              >
-                <img
-                  src="./images/prod1.png"
-                  alt="K. Accessories"
-                  class="rounded-xl"
-                />
-              </figure>
-              <!-- ratings  -->
-              <div class="rating mx-auto pt-6">
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                  checked
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
+          <div class="pt-[71px] ml-5">
+            <!-- coupon  -->
+            <div class="p-6 w-[342px] bg-white border rounded-lg mb-6">
+              <div>
+                <h3 class="text-2xl font-medium pb-4">Have coupon?</h3>
               </div>
-              <div class="card-body items-center text-center py-2 gap-0">
-                <h2 class="card-title">K. Accessories</h2>
-                <p class="text-xl pb-1">39.00 TK</p>
+              <div class="form-control w-[294px]">
+                <label class="input-group">
+                  <input
+                    type="text"
+                    placeholder="Coupon code"
+                    class="input input-bordered border-r-0 focus:outline-none"
+                  />
+                  <button
+                    class="btn bg-main text-white px-4 py-5 font-semibold text-center content-around border-main hover:bg-secondary text-base btn-disabled"
+                  >
+                    Apply
+                  </button>
+                </label>
               </div>
             </div>
-            <!-- card 2  -->
-            <div class="card w-[342px] bg-base-100 shadow-2xl">
-              <figure
-                class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg"
-              >
-                <img
-                  src="./images/prod1.png"
-                  alt="K. Accessories"
-                  class="rounded-xl"
-                />
-              </figure>
-              <!-- ratings  -->
-              <div class="rating mx-auto pt-6">
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                  checked
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
+            <!-- product & price  -->
+            <div class="p-6 w-[342px] bg-white border rounded-lg">
+              <!-- procuct list -->
+              <div class="border-b">
+                <p class="text-2xl font-medium py-1">
+                  <span>1.</span>Home Cooker
+                </p>
+                <p class="text-2xl font-medium py-1">
+                  <span>2.</span>Flexible Sofa
+                </p>
+                <p class="text-2xl font-medium pt-1 pb-5">
+                  <span>3.</span>Home Cooker
+                </p>
               </div>
-              <div class="card-body items-center text-center py-2 gap-0">
-                <h2 class="card-title">K. Accessories</h2>
-                <p class="text-xl pb-1">39.00 TK</p>
+              <!-- price tags  -->
+              <div class="border-b">
+                <p class="text-2xl font-medium pt-5 pb-1">
+                  Total Price: <span class="text-[#11111180]">257.00TK</span>
+                </p>
+                <p class="text-2xl font-medium py-1">
+                  Discount : <span class="text-[#11111180]">51.40TK</span>
+                </p>
+                <p class="text-2xl font-medium pt-1 pb-8">
+                  Total: <span class="text-[#11111180]">205.60TK</span>
+                </p>
               </div>
+              <div class="pb-7"></div>
             </div>
-            <!-- card 3  -->
-            <div class="card w-[342px] bg-base-100 shadow-2xl">
-              <figure
-                class="px-24 py-8 mt-5 ml-5 mr-5 bg-[#1111110D] rounded-lg"
+            <div>
+              <button
+                class="btn bg-main w-[294px] text-white px-4 py-4 text-center content-around border-main hover:bg-secondary font-semibold text-base mx-auto block mt-[-27px]"
+                onclick="my_modal_4.showModal()"
               >
-                <img
-                  src="./images/prod1.png"
-                  alt="K. Accessories"
-                  class="rounded-xl"
-                />
-              </figure>
-              <!-- ratings  -->
-              <div class="rating mx-auto pt-6">
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                  checked
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-              </div>
-              <div class="card-body items-center text-center py-2 gap-0">
-                <h2 class="card-title">K. Accessories</h2>
-                <p class="text-xl pb-1">39.00 TK</p>
-              </div>
+                Make Purchase
+              </button>
+              <!-- Modal  -->
+              <dialog id="my_modal_4" class="modal text-center">
+                <form method="dialog" class="modal-box w-11/12 max-w-xl">
+                  <img
+                    src="./images/congo.png"
+                    class="mx-auto"
+                    alt="congratulations-img"
+                  />
+                  <h3 class="font-bold text-lg">Congratulations</h3>
+                  <p class="py-4">You Purchased the product</p>
+                  <div class="modal-action">
+                    <!-- if there is a button, it will close the modal -->
+                    <button
+                      class="btn border rounded-lg bg-main text-white text-base font-semibold text-center px-11 py-4 mx-auto hover:bg-secondary content-around"
+                    >
+                      Go Home
+                    </button>
+                  </div>
+                </form>
+              </dialog>
             </div>
           </div>
         </section>
-        <!-- kitchenware section ends -->
-        <!-- furniture section starts -->
-        <section></section>
-        <!-- furniture section ends -->
+        <!-- coupon & price section ends-->
       </div>
-      <!-- coupon & price section starts-->
-      <section>
-        <div>
-          <div>
-            <h3 class="text-2xl font-medium">Have coupon?</h3>
-          </div>
-          <div class="form-control w-[294px]">
-            <label class="input-group">
-              <input
-                type="text"
-                placeholder="Coupon code"
-                class="input input-bordered border-r-0 focus:outline-none"
-              />
-              <button
-                class="btn bg-main text-white px-4 py-5 text-center content-around border-main hover:bg-secondary"
-                disabled
-              >
-                Apply
-              </button>
-            </label>
-          </div>
-
-          <!-- procuct list -->
-          <div class="border-b">
-            <p class="text-2xl font-medium"><span>1.</span>Home Cooker</p>
-            <p class="text-2xl font-medium"><span>2.</span>Flexible Sofa</p>
-            <p class="text-2xl font-medium"><span>3.</span>Home Cooker</p>
-          </div>
-          <!-- price tags  -->
-          <div class="border-b">
-            <p class="text-2xl font-medium">
-              Total Price: <span class="text-[#11111180]">257.00TK</span>
-            </p>
-            <p class="text-2xl font-medium">
-              Discount : <span class="text-[#11111180]">51.40TK</span>
-            </p>
-            <p class="text-2xl font-medium">
-              Total: <span class="text-[#11111180]">205.60TK</span>
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- coupon & price section ends-->
     </main>
     <footer></footer>
   </body>
