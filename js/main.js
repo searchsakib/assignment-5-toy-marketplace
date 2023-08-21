@@ -50,7 +50,7 @@ function priceCalculation(target) {
         discount.innerText = (grandTotal * 0.2).toFixed(2);
         let discountValue = parseFloat(discount.innerText);
         afterDiscount.innerText = (grandTotal - discountValue).toFixed(2);
-        console.log(discountValue);
+        // console.log(discountValue);
 
         // couponApply.classList.add('btn-disabled');
         // couponInput.placeholder = 'COUPON USED';
